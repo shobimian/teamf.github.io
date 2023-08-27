@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="stylesheet" href="carasoul.css">
+  <title>Team F</title>
+</head>
+<body>
+<div class="main">
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">Team F</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ourteam.html">Our Team</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+  <!-- HOME PAGE -->
+  <div class="homepage">
+    <h3>Medical Billing</h3>
+    <p>Medical billing is the process by which healthcare organizations submit claims to payers and bill patients for their own financial responsibility. While coders are busy translating medical records, the front-end billing process has already started.</p>
+    <li><a href="ourteam.html">View Team</a></li>
+  </div>
+
+  <!-- services section -->
+  <div class="services">
+      <center><h1>Our Services</h1></center>
+      <div class="cart">
+        <div class="left">
+          <h2>Patient Demography</h2>
+          <p>Our Team Managed patient demographic data, Patient demographic data refers to all of the non-clinical data about a patient, including: name, date of birth, address, phone number, email address, sex, race, etc.</p>
+        </div>
+        <div class="right">
+          <img src="Images/demo.jpg" alt="">
+        </div>
+      </div>
+      <div class="cart">
+        <div class="left">
+          <h2>Charges Entry</h2>
+          <p>Charge entry is the process or set of processes by which charges for medical services and other patient-facing services are submitted to the appropriate payors for billing. It involves a detailed accounting for services rendered, as well as an initial intake of important information.</p>
+        </div>
+        <div class="right">
+          <img src="Images/chargesentry.png" alt="">
+        </div>
+      </div>
+      <div class="cart">
+        <div class="left">
+          <h2>Claim Submission</h2>
+          <p>Medical insurance claim Submission is one of the key steps in the medical billing process. It determines the amount of reimbursement that the healthcare provider will receive after the insurance company clears the dues.</p>
+        </div>
+        <div class="right">
+          <img src="Images/submission.jpg" alt="">
+        </div>
+      </div>
+      <div class="cart">
+        <div class="left">
+          <h2>Claim Rejections</h2>
+          <p>Claim rejection refers to situations where your insurance company does not pay your healthcare claim, either in part or full. A claim rejection occurs when your insurance company finds an error in your submitted claim. The claim is then returned to you with details of the error(s) you can correct and resubmit.</p>
+        </div>
+        <div class="right">
+          <img src="Images/rejection.jpg" alt="">
+        </div>
+      </div>
+      <div class="cart">
+        <div class="left">
+          <h2>Payment Posting</h2>
+          <p>The term “payment posting” describes the process of examining payments and the financial status of a medical business. Additionally, it alludes to recording payments in the medical billing process. It offers a perspective on patient payments, insurance checks from ERAs, and insurance payments in EOBs.</p>
+        </div>
+        <div class="right">
+          <img src="Images/payment.PNG" alt="">
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- about section -->
+      <div class="about animatedheader">
+        <h1>About Us</h1>
+        <p>We are providing Medical Billing service, using different type of billing softwares and we have an expert team to providing quality in services and managed revinue cycle management</p>
+    </div>
+      <!-- carasoul -->
+      <br>
+      <br>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Images/submission.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Images/chargesentry.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Images/payment.PNG" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  <div class="footer"><span>Copyright &copy2023 By Bellmedex-Team F</span></div>
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+  </div>
+</div>
+</body>
+
+</html>

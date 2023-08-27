@@ -1,0 +1,270 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: cursive;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: teal;
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #fff;
+  }
+  
+  /* LOGO */
+  .logo {
+    font-size: 32px;
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.5s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+ 
+  /* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  
+  
+  /* HOMEPAGE */
+  .homepage{
+    width: 100%;
+    height: 500px;
+    background-image: url("Images/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    margin: 0px;
+  }
+  .homepage p{
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: antiquewhite;
+    text-shadow: 0 0 3px teal, 0 0 5px teal;
+  }
+  .homepage h3{
+    font-size: 4rem;
+    font-weight: 700;
+    color:white;
+    text-shadow: 0 0 3px teal, 0 0 5px teal;
+  }
+  .homepage h3:hover{
+    /* font-size: 4.2rem; */
+    font-style: underline;
+  }
+  .homepage li{
+    background-color: teal;
+    padding: 15px;
+    border: 2px;
+    width: 15%;
+    border-radius: 50px;
+    text-align: center;
+    transition: 1s ease;
+  }
+  .homepage li:hover{
+    cursor: pointer;
+    width: 17%;
+  }
+  .homepage li a{
+    color: white;
+  }
+.services{
+  margin-top: 10px;
+}
+.cart{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  
+}
+.left{
+  width: 50%;
+  height: 200px;
+}
+.left p{
+width: 70%;
+margin-left: 100px;
+}
+.left h2{
+  margin-left: 100px;
+}
+.right{
+  width: 50%;
+  height: 200px;
+}
+.right img{
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* border: 5px solid teal; */
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* about section */
+.about{
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+.about p{
+  margin-top: 10px;
+  width: 70%;
+  font-size: 2rem;
+}
+/* footer section */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: teal;
+  color: #fff;
+  margin-bottom: 5px;
+}
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: teal;
+  border-radius: 10px;
+  animation: 1s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: teal;
+}
+
+
+/* overteam */
+.teamcard{
+  width: 100%;
+  height: 500px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.maincard{
+  width: 23%;
+  height: 500px;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  /* background-color: green; */
+}
+.maincard img{
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 23%;
+  transition: 2s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.maincard:hover .overlay {
+  opacity: 1;
+}
+.contact{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+.contactcard-left{
+  width: 50%;
+  height: 200px;
+}
+.contactcard-left h2{
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.contactcard-left span{
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.contactcard-right{
+  width: 50%;
+  height: 200px;
+  display: grid;
+  place-items: center;
+}
+.contactcard-right img{
+  height: 195px;
+  border: 5px solid teal;
+  border-radius: 50%;
+}
+
