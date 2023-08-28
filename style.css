@@ -204,14 +204,16 @@ margin-left: 100px;
   /* background-color: red; */
   display: flex;
   justify-content: center;
-  position: relative;
+  
 }
 .maincard{
   width: 23%;
   height: 500px;
   margin: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+  position: relative;
+  display: flex;
+  justify-content: center;
   /* background-color: green; */
 }
 .maincard img{
@@ -225,7 +227,7 @@ margin-left: 100px;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
-  width: 23%;
+  width: 100%;
   transition: 2s ease;
   opacity:0;
   color: white;
