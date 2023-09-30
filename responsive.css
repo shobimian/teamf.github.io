@@ -33,17 +33,19 @@
 
 @media (max-width: 768px) {
     .homepage{
-        height: 400px;
+        height: 100vh;
     }
     .homepage p{
         width: 95%;
         font-size: 1.2rem;
         font-weight: 400;
         /* margin-left: 10px; */
+        margin-bottom: 2rem;
     }
     .homepage h3{
         font-size: 2rem;
         font-weight: 700;
+        margin-top: 5rem;
       }
       .homepage li{
         padding: 15px;
@@ -92,10 +94,7 @@
       .teamcard{
         display: grid;
         width: 100%;
-        height: 2000px;
-      }
-      .umer{
-        height: 500px;
+        height: 1500px;
       }
       .maincard{
         width: 98%;
