@@ -33,7 +33,7 @@
 
 @media (max-width: 768px) {
     .homepage{
-        height: 100vh;
+        height: 600px;
     }
     .homepage p{
         width: 95%;
